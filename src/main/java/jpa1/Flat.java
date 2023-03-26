@@ -27,7 +27,6 @@ public class Flat {
     }
 
     public Flat(String district, String address, int square, int room_qty, long price) {
-        this.id = id;
         this.district = district;
         this.address = address;
         this.square = square;
