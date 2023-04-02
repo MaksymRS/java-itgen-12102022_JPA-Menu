@@ -18,7 +18,7 @@ public class Main {
             em = emf.createEntityManager();
             try {
                 while (true) {
-                    System.out.println("\n --Make your choose--");
+                    System.out.println("\n --Make your choice--");
                     System.out.println("1: add dish");
                     System.out.println("2: view all menu");
                     System.out.println("3: select dishes by price");
