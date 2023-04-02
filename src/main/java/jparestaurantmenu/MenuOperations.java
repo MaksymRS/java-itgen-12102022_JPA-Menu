@@ -95,7 +95,6 @@ public class MenuOperations {
         Query query = em.createQuery("SELECT md FROM MenuDish md", MenuDish.class);
         List<MenuDish> list = query.getResultList();
         Random rnd = new Random();
-        List<MenuDish> maxWeightList = new LinkedList<>();
 
         double weight;
         double totalWeight = 0;
@@ -109,7 +108,7 @@ public class MenuOperations {
                 totalWeight -= randomDish.getWeight();
                 break;
             }
-            maxWeightList.add(randomDish);
+
             System.out.println(randomDish.getName() + " - " + weight + " g");
         }
         System.out.println("The total weight of your set of dishes is " + totalWeight + " g");
