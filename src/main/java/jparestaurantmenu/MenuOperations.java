@@ -105,7 +105,7 @@ public class MenuOperations {
             MenuDish randomDish = list.get(rnd.nextInt(list.size()));
             weight = randomDish.getWeight();
             totalWeight += randomDish.getWeight();
-            if (totalWeight >= maxWeight) {
+            if (totalWeight > maxWeight) {
                 totalWeight -= randomDish.getWeight();
                 break;
             }
